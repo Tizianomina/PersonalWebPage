@@ -1,4 +1,4 @@
-import { NavBar } from "../data/NavBar";
+import { NavBar } from "../components/NavBar";
 
 import tiziano from "../asset/TizianoMJ.png";
 import github from "../asset/github.png";
