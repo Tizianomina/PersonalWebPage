@@ -4,7 +4,7 @@ import tiziano from "../asset/TizianoMJ.png";
 import github from "../asset/github.png";
 import linkedin from "../asset/linkedin.png";
 
-const CV = "/public/CV-Tiziano-Mina.pdf"
+const CV = "/CV-Tiziano-Mina.pdf"
 
 
 
