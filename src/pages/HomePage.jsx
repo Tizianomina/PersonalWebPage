@@ -4,7 +4,29 @@ import tiziano from "../asset/TizianoMJ.png";
 import github from "../asset/github.png";
 import linkedin from "../asset/linkedin.png";
 
+const CV = "/public/CV-Tiziano-Mina.pdf"
+
+
+
 export const HomePage = () => {
+
+  const downloadCV = (url) => {
+    // Obtener el nombre del archivo a partir de la URL
+    const fileName = url.split("/").pop();
+    // Crear un elemento <a> para el enlace de descarga
+    const aTag = document.createElement("a");
+    // Establecer la URL del enlace <a> con la URL proporcionada
+    aTag.href = url;
+    // Establecer el atributo download con el nombre del archivo
+    aTag.setAttribute("download", fileName);
+    // Agregar el enlace <a> al cuerpo del documento
+    document.body.appendChild(aTag);
+    // Simular un clic en el enlace <a> para iniciar la descarga
+    aTag.click();
+    // Eliminar el enlace <a> del documento después de la descarga
+    aTag.remove();
+  };
+
   return (
     <section className="bg-[#f7f7f7]">
       <NavBar />
@@ -18,7 +40,10 @@ export const HomePage = () => {
             <p className="text-2xl md:text-4xl text-[#2e2e2e]">
               Apasionado por la tecnología y el desarrollo web.
             </p>
-            <button className="bg-[#FF6915] w-full text-[#fff] p-2 rounded-md text-2xl md:w-[70%] md:text-3xl md:font-semibold shadowContratar">
+            <button className="bg-[#FF6915] w-full text-[#fff] p-2 rounded-md text-2xl md:w-[70%] md:text-3xl md:font-semibold shadowContratar"
+            onClick={()=> {
+              downloadCV(CV)
+            }}>
               Contrátame
             </button>
           </article>
