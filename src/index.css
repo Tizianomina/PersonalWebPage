@@ -16,3 +16,20 @@
 .shadowContratar:hover {
   box-shadow: 0px 20px 30px 10px #e98b4d;
 }
+
+
+.shadowButtonCardVisitar{
+  box-shadow: 0px 0px 0px 0px #fff;
+  transition: box-shadow .3s ease;
+}
+.shadowButtonCardVisitar:hover{
+  box-shadow: 0px 8px 0px 0px #fff
+}
+
+.shadowButtonCardCodigo{
+  box-shadow: 0px 0px 0px 0px #FD8D14;
+  transition: box-shadow .3s ease;
+}
+.shadowButtonCardCodigo:hover{
+  box-shadow: 0px 5px 0px 0px #FD8D14
+}
