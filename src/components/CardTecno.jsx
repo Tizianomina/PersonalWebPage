@@ -4,11 +4,11 @@ export const CardTecno = ({ technology }) => {
       <img
         src={technology.img}
         alt={technology.name}
-        className="mx-auto w-[150px]"
+        className="mx-auto w-[100px]"
       />
       <div className="space-y-3">
         <p className="text-2xl font-bold text-[#2e2e2e]">{technology.name}</p>
-        <p className="font-semibold ">{technology.level}</p>
+        <p className="">{technology.level}</p>
       </div>
     </article>
   );
