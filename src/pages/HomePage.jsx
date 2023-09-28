@@ -30,10 +30,10 @@ export const HomePage = () => {
               className="rounded-xl"
             />
             <div className="w-[90%] mx-auto flex justify-between mt-2">
-              <a href="#" className="">
+              <a href="https://www.linkedin.com/in/tiziano-mina/" className="">
                 <img src={linkedin} alt="Linkedin" className="w-[50px] md:w-[40px] shadowLinkedin" />
               </a>
-              <a href="#" className="">
+              <a href="https://github.com/Tizianomina?tab=repositories" className="">
                 <img src={github} alt="Github" className="w-[50px] md:w-[40px] shadowGithub" />
               </a>
             </div>
