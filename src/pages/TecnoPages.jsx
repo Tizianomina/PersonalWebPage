@@ -1,9 +1,11 @@
+import { Element } from "react-scroll";
 import { CardTecno } from "../components/CardTecno";
 import { technologies } from "../data/tecnoData";
 
 export const TecnoPages = () => {
   return (
-    <section className="p-5 pt-20 bg-[#fff]" id="tecno">
+    <section className="p-5 pt-20 bg-[#fff]" >
+      <Element name="tecno">
       <p className="text-4xl text-center md:text-6xl font-extrabold text-[#2e2e2e]">
         Tecnologías
       </p>
@@ -13,6 +15,7 @@ export const TecnoPages = () => {
           <CardTecno technology={technology} key={technology.id} />
         ))}
       </div>
+      </Element>
     </section>
   );
 };
