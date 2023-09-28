@@ -1,7 +1,21 @@
+import { Footer } from "./components/Footer";
+import { AboutPage } from "./pages/AboutPage";
+import { ContactFormPage } from "./pages/ContactFormPage";
+import { HomePage } from "./pages/HomePage";
+import { ProyectsPage } from "./pages/ProyectsPage";
+import { TecnoPages } from "./pages/TecnoPages";
+
+
+
 export const App = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <HomePage />
+      <AboutPage />
+      <TecnoPages />
+      <ProyectsPage />
+      <ContactFormPage />
+      <Footer />
+    </>
   );
 };
