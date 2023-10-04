@@ -11,7 +11,7 @@ export const Form = () => {
 
     const serviceId = import.meta.env.VITE_SERVICEID;
     const templateId = import.meta.env.VITE_TEMPLATEID;
-    const apiKey = import.meta.env.VITE_API_KEY ;
+    const apiKey = import.meta.env.VITE_API_KEY;
 
     emailjs
       .sendForm(serviceId, templateId, refForm.current, apiKey)
@@ -23,7 +23,6 @@ export const Form = () => {
       })
       .catch((error) => console.log(error));
   };
-
   return (
     <form action="" onSubmit={handleSubmit} ref={refForm}>
       <div className="w-[90%] mx-auto space-y-5 flex flex-col items-center pb-28">
