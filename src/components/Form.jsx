@@ -23,7 +23,6 @@ export const Form = () => {
       })
       .catch((error) => console.log(error));
   };
-
   return (
     <form action="" onSubmit={handleSubmit} ref={refForm}>
       <div className="w-[90%] mx-auto space-y-5 flex flex-col items-center pb-28">
