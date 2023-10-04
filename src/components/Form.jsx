@@ -11,7 +11,7 @@ export const Form = () => {
 
     const serviceId = import.meta.env.VITE_SERVICEID;
     const templateId = import.meta.env.VITE_TEMPLATEID;
-    const apiKey = import.meta.env.VITE_API_KEY ;
+    const apiKey = import.meta.env.VITE_API_KEY;
 
     emailjs
       .sendForm(serviceId, templateId, refForm.current, apiKey)
