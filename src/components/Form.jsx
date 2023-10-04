@@ -9,9 +9,9 @@ export const Form = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const serviceId = "service_ogz9pmv";
-    const templateId = "template_uwr3def";
-    const apiKey = "FC-jM1QZCEeNHg1ZP";
+    const serviceId = import.meta.env.VITE_SERVICEID;
+    const templateId = import.meta.env.VITE_TEMPLATEID;
+    const apiKey = import.meta.env.VITE_API_KEY ;
 
     emailjs
       .sendForm(serviceId, templateId, refForm.current, apiKey)
