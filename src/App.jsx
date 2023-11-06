@@ -4,9 +4,6 @@ import { ContactFormPage } from "./pages/ContactFormPage";
 import { HomePage } from "./pages/HomePage";
 import { ProyectsPage } from "./pages/ProyectsPage";
 import { TecnoPages } from "./pages/TecnoPages";
-
-
-
 export const App = () => {
   return (
     <>

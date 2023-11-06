@@ -13,6 +13,10 @@ export const Form = () => {
     const templateId = import.meta.env.VITE_TEMPLATEID;
     const apiKey = import.meta.env.VITE_API_KEY;
 
+    console.log("serviceId" + serviceId)
+    console.log("templateId" + templateId)
+    console.log("apiKey" + apiKey)
+
     emailjs
       .sendForm(serviceId, templateId, refForm.current, apiKey)
       .then((result) => {
@@ -30,20 +34,20 @@ export const Form = () => {
           type="text"
           placeholder="Ingrese su nombre"
           name="username"
-          className="w-full p-2 rounded bg-[#f7f7f7]  outline-none  focusFormShadow"
+          className="w-full p-2 rounded bg-[#e8e8e8]  outline-none  focusFormShadow"
           required
         />
         <input
           type="email"
           name="email"
           placeholder="Ingrese su correo"
-          className="w-full p-2 rounded bg-[#f7f7f7]  outline-none  focusFormShadow"
+          className="w-full p-2 rounded bg-[#e8e8e8]  outline-none  focusFormShadow"
           required
         />
         <textarea
           placeholder="Coloque su mensaje..."
           name="message"
-          className="w-full h-[300px] p-2 rounded bg-[#f7f7f7]  outline-none  focusFormShadow"
+          className="w-full h-[300px] md:h-[200px] p-2 rounded bg-[#e8e8e8]  outline-none  focusFormShadow"
           required
         ></textarea>
         {mensajeEnviado && (
@@ -52,7 +56,7 @@ export const Form = () => {
             pondré en comunicación con usted a la brevedad, lo antes posible.
           </p>
         )}
-        <button className="bg-[#064ACB] text-white p-2 rounded-lg text-xl w-full md:w-[90%] text-center shadowButtonForm">
+        <button className="bg-[#fd8f28] text-white p-2 rounded-lg text-xl w-full md:w-[90%] text-center shadowButtonForm">
           Enviar
         </button>
       </div>

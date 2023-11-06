@@ -4,10 +4,10 @@ import { Form } from "../components/Form"
 export const ContactFormPage = () => {
   return (
     
-    <section className="p-5 pt-20 bg-[#d8d8d8] mx-auto">
+    <section className="p-5 pt-20 bg-[#fcfcfc] mx-auto">
       <Element name="contact">
-        <p className="text-4xl md:text-6xl text-center font-extrabold text-[#2e2e2e]">Contácto</p>
-        <p className="text-center py-10">Si deseas contactarme, puedes hacerlo de manera secilla utilizando este formulario. Estoy a disposición para hacer que esta experiencia sea tan profesional como entretenida. ¡Espero tu mensaje!</p>
+        <p className="subtitle">Contácto</p>
+        <p className="text-justify py-10 md:text-xl">Si deseas contactarme, puedes hacerlo de manera secilla utilizando este formulario. Estoy a disposición para hacer que esta experiencia sea tan profesional como entretenida. ¡Espero tu mensaje!</p>
         <hr className="py-5"/>
         <Form />
     </Element>
