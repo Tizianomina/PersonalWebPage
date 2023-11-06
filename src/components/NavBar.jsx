@@ -3,7 +3,6 @@ import { Link as ScrollLink } from "react-scroll";
 
 export const NavBar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
   const toggleNavbar = () => {
     setNavbarOpen(!navbarOpen);
   };
@@ -24,21 +23,7 @@ export const NavBar = () => {
     }
   }, [navbarOpen]);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
 
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
     <header className="">
