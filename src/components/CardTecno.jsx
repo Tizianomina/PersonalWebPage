@@ -1,6 +1,6 @@
 export const CardTecno = ({ technology }) => {
   return (
-    <article className=" w-[250px] mx-auto  text-center  my-10 bg-[#f1f1f1] rounded-xl p-4 space-y-5 flex flex-col justify-around">
+    <article className=" w-[300px] mx-auto  text-center  my-10 bg-[#f5f5f5] rounded-xl p-4 space-y-5 flex flex-col justify-around">
       <img
         src={technology.img}
         alt={technology.name}

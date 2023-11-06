@@ -2,6 +2,97 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  /* navbar */
+
+  .containerModal {
+    @apply flex flex-col h-[700px] bg-gray-200 justify-around text-center md:hidden;
+  }
+
+  .linksModal {
+    @apply text-3xl mx-auto text-center text-orange-400;
+  }
+
+  .linkNavBar {
+    @apply text-3xl text-[#2e2e2e] cursor-pointer;
+  }
+
+  .linkNavBar:hover{
+    @apply text-orange-500
+  }
+
+  .containerNavBar {
+    @apply md:flex md:w-[60%] md:justify-around md:items-center hidden;
+  }
+
+
+  .subtitle{
+    @apply text-5xl py-12 font-bold text-[#2e2e2e]
+  }
+
+  /* foto de quien soy. */
+
+  .home {
+    @apply w-full p-4 md:flex md:justify-around md:items-center md:h-screen;
+  }
+
+  .home__picture {
+    @apply mb-10  md:w-[280px];
+  }
+
+  .home__photo {
+    @apply mx-auto rounded-lg mb-5 md:mb-2;
+  }
+
+  .home__contact {
+    @apply mx-auto w-72 flex justify-between  md:w-64;
+  }
+
+  .home__linkedin {
+    @apply w-[50px] md:w-[40px];
+  }
+
+  .home__github {
+    @apply w-[50px] md:w-[40px];
+  }
+
+  /* Texto de quien soy. */
+
+  .home__iam {
+    @apply w-full p-4  md:p-0 md:w-[50%] md:flex md:flex-col  md:h-[340px];
+  }
+
+  .home__title {
+    @apply text-4xl font-extrabold text-[#2e2e2e] mb-2 md:text-7xl;
+  }
+
+  .home__subtitle {
+    @apply text-2xl text-[#2e2e2e] mb-2 md:text-4xl;
+  }
+
+  .home__btnCv {
+    @apply bg-[#FF6915] w-full text-[#fff] p-2 rounded-md text-2xl md:w-[70%] md:text-2xl md:font-semibold md:mt-5;
+  }
+
+  /* Quien soy */
+
+  .about {
+    @apply w-full h-screen p-8 flex flex-col justify-center bg-[#fcfcfc];
+  }
+
+  /* tecnologias */
+
+  .technology {
+    @apply w-full  p-8 bg-[#fcfcfc];
+  }
+
+  .technology__title {
+    @apply text-5xl py-12 font-bold text-[#2e2e2e];
+  }
+
+  /* Proyectos */
+}
+
 .shadowLinkedin:hover {
   box-shadow: 0 10px 20px rgba(29, 36, 252, 0.7);
 }
@@ -15,36 +106,27 @@
 }
 
 .shadowContratar:hover {
-  -webkit-box-shadow: -6px 8px 3px 2px rgba(186, 70, 3, 0.5);-moz-box-shadow: -6px 8px 3px 2px rgba(186, 70, 3, 0.5);box-shadow: -6px 8px 3px 2px rgba(186, 70, 3, 0.5);
+  -webkit-box-shadow: -6px 8px 3px 2px rgba(186, 70, 3, 0.5);
+  -moz-box-shadow: -6px 8px 3px 2px rgba(186, 70, 3, 0.5);
+  box-shadow: -6px 8px 3px 2px rgba(186, 70, 3, 0.5);
 }
 
-
-.shadowButtonCardVisitar{
+.shadowButtonCardVisitar {
   box-shadow: 0px 0px 0px 0px #fff;
-  transition: box-shadow .3s ease;
+  transition: box-shadow 0.3s ease;
 }
-.shadowButtonCardVisitar:hover{
-  box-shadow: 0px 8px 0px 0px #fff
+.shadowButtonCardVisitar:hover {
+  box-shadow: 0px 8px 0px 0px #fff;
 }
 
-.shadowButtonCardCodigo{
-  box-shadow: 0px 0px 0px 0px #FD8D14;
-  transition: box-shadow .3s ease;
-}
-.shadowButtonCardCodigo:hover{
-  box-shadow: 0px 5px 0px 0px #FD8D14
-}
 .shadowButtonForm {
-  background-color: #064ACB;
   transition: background-color 0.3s ease; /* Animar solo el color de fondo */
 }
 
 .shadowButtonForm:hover {
-  background-color: #004225;
+  background-color: green;
 }
 
-
-
-.focusFormShadow:focus{
-  border-bottom: solid #F86F03;
+.focusFormShadow:focus {
+  border-bottom: solid #f86f03;
 }

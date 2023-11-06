@@ -1,11 +1,11 @@
 export const Footer = () => {
     return (
-      <footer className="text-center py-4 bg-gray-200 h-[300px] flex flex-col justify-center text-xl">
+      <footer className="text-center py-4 bg-[#fcfcfc] flex flex-col justify-around  text-xl h-screen">
         <p>
           Gracias por visitarme. No dudes en conectarte conmigo en mi red de{" "}
           <a
             href="https://www.linkedin.com/in/tiziano-mina/"
-            className="text-2xl text-[#064ACB] font-semibold hover:underline"
+            className="text-2xl text-[#ff7b00] font-bold hover:underline"
             target="_blank"
             rel="noopener noreferrer"
           >
