@@ -3,7 +3,6 @@ import { Link as ScrollLink } from "react-scroll";
 
 export const NavBar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
-
   const toggleNavbar = () => {
     setNavbarOpen(!navbarOpen);
   };
@@ -14,19 +13,21 @@ export const NavBar = () => {
     }, 1000);
   };
 
-  // useEffect(() => {
-  //   if (navbarOpen) {
-  //     // Cuando el modal se abre, deshabilita el scroll
-  //     document.body.style.overflow = "hidden";
-  //   } else {
-  //     // Cuando el modal se cierra, habilita el scroll
-  //     document.body.style.overflow = "visible";
-  //   }
-  // }, [navbarOpen]);
+  useEffect(() => {
+    if (navbarOpen) {
+      // Cuando el modal se abre, deshabilita el scroll
+      document.body.style.overflow = "hidden";
+    } else {
+      // Cuando el modal se cierra, habilita el scroll
+      document.body.style.overflow = "visible";
+    }
+  }, [navbarOpen]);
+
+
 
   return (
-    <header className="bg-white">
-      <nav className="font-bold md:flex md:items-center md:justify-around md:py-5">
+    <header className="">
+      <nav className="font-bold md:flex md:items-center md:justify-around md:py-5 fixed top-0 left-0 w-full bg-[#fcfcfc]">
         <div className="p-4 flex justify-between items-center ">
           <a className="text-3xl">TizianoMJ</a>
           <span

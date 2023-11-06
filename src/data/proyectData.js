@@ -10,7 +10,7 @@ export const proyects = [
     id: 5,
     name: "Clone Airbnb",
     page: "https://c14-02-m-node-react.vercel.app/",
-    description: "proyecto Clon Airbnb trabajado en equipo y aplicando la metodología SCRUM. Este proyecto se realizo en NoCountry para realizar un trabajo en equipo y asi mejorando nuestras habilidades técnicas y blandas.",
+    description: "proyecto Clon Airbnb trabajado en equipo y aplicando la metodología SCRUM. Este proyecto se realizó en NoCountry para realizar un trabajo en equipo y asi mejorando nuestras habilidades técnicas y blandas.",
     img: airbnb,
   },
   {
